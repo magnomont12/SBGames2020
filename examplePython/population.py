@@ -35,15 +35,11 @@ class Population():
 
     def naturalSelection(self):
         maxFitness = self.maxFitness()
-        #print(len(self.population))
         for a in range(0,len(self.population)):
             n =  (1 - self.population[a].fitness/maxFitness) * 100
             n = int(n)
-            #print(n,self.population[a].fitness )
             for b in range(0,n):
                 self.matingPool.append(self.population[a])
-                #print(self.matingPool[a].fitness)
-        #print(len(self.matingPool))
     
     def generate(self):
         for a in range(0, len(self.population)):

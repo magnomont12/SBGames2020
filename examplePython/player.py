@@ -26,7 +26,6 @@ class Monster():
 
     def resultFitness(self, target, numAtqs):
         newFitness = abs(target-numAtqs)
-        #newFitness = 1/newFitness
         self.fitness = newFitness
         return newFitness
 
