@@ -9,7 +9,7 @@ class Population():
         self.population = []
         self.matingPool = []
         for a in range(0,pop):
-            self.population.append(player.Monster(random.randint(0,999), random.randint(0,10), random.randint(0,999)))
+            self.population.append(player.Monster(random.randint(0,(p1.ataque*2)-1), random.randint(0,10), random.randint(0,(p1.ataque*2)-1)))
         self.calcFitness(p1)
 
     def calcFitness(self, p1):
