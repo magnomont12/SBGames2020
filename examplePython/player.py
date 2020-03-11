@@ -41,11 +41,6 @@ class Monster():
                 child[a] = partener.dna[a]
         return child
 
-    """
-    Possível erro de Ref
-    Ao trocar: self.dna[a] = random.randint(0,999) por self.dna[a] = random.randint(0,self.dna[2])
-    Em algum momento todos os valores do dna de monstro vão para 0
-    """
     def mutate(self, mutationRate):
         for a in range(0,len(self.dna)):
             if random.random() < mutationRate:
