@@ -21,8 +21,6 @@ while(pop.minFitness()[0] > 1):
     pop.calcFitness(jogador)
     pop.naturalSelection()
     pop.generate()
-    #for a in pop.population:
-        #print(a.fitness, a.dna, jogador.calcBatalha(a)[0])
     print(pop.minFitness()[0], pop.minFitness()[1])
 
 
